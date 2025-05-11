@@ -40,3 +40,20 @@ function flipCard(cardEl) {
   cardEl.classList.toggle('flipped');
 }
 
+function createFlower() {
+  const flower = document.createElement("div");
+  flower.classList.add("flower");
+
+  flower.style.left = Math.random() * 100 + "vw";
+  flower.style.animationDuration = 3 + Math.random() * 5 + "s";
+  flower.style.opacity = Math.random();
+
+  document.getElementById("flower-container").appendChild(flower);
+
+  setTimeout(() => {
+    flower.remove();
+  }, 8000);
+}
+
+// Cria flores a cada 300ms
+setInterval(createFlower, 300);

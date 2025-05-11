@@ -201,3 +201,34 @@ footer {
     font-size: 0.8rem;
     font-style: italic;
 }
+
+
+
+#flower-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+.flower {
+  position: absolute;
+  top: -50px;
+  width: 30px;
+  height: 30px;
+  background-image: url('https://emojicdn.elk.sh/🌸');
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: fall linear;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
+}
