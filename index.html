@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para a melhor mãe do Mundo 💗</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="./assets/img/famicon.ico" type="image/x-icon">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <section data-aos="zoom-in" class="hero">
+        <h1 class="mensagem-titulo">Feliz dia das Mães 💗 <br><span>Mary</span></h1>
+        <h1>Mãe, você é tão especial para mim! 💐</h1>
+        <p>Clique abaixo para descobrir uma uma surpresa 😘</p>
+        <button onclick="mostrarSurpresa()">Abrir Surpresa 💌</button>
+
+    <section id="carta" class="carta-dobrada oculto" onclick="abrirCarta()">
+        <div class="conteudo-carta">
+            <div class="frente">
+                <h2>Uma carta para você, mãe!</h2>
+                <p>Deslize para abrir a carta 💌</p>
+            </div>
+            <div class="verso">
+                <p>Mãe, muito obrigado por nos amar tanto! Não sei o que seria da nossa familia se você não surportasse tantas coisas que somente você e Deus sabe! Eu lhe amo imensamente! E todos os dias sou muito grato por ter uma mãe guerreia e resiliente! Você é um exemplo de Amor, Carinho, Paciência! Você é maior presente em minha vida! Te amo 💝. Que Deus sempre continue lhe abençoando 🙏!</p>
+                <audio id="musicaFundo" class="musica-fundo"  src="./assets/audios/Gerson Rufino _ Mãe (CD A Cruz) [CvdhOTSU5eY].mp3">Seu navegador não suporta áudio :(</audio>
+            </div>
+            
+            <img src="./assets/img/mae.jpg" alt="Eu com a mãe">
+        </div>
+    </section>
+    <section class="polaroids" id="galeria">
+    <h2 data-aos="fade-down">✨ Recordações Mágicas</h2>
+    <div class="polaroid" onclick="flipCard(this)">
+        <div class="face frente">
+            <img src="./assets/img/mae1.jpg" alt="Mamãe sorrindo">
+            <p>Seu sorriso ilumina tudo 🌟</p>
+        </div>
+        <div class="face verso">
+            <p>Você nos ensina a ter fé todos os dias 🙏</p>
+        </div>
+    
+    </div>
+    <div class="polaroid" onclick="flipCard(this)">
+        <div class="face frente">
+            <img src="./assets/img/mae2.jpg" alt="Abraço carinhoso">
+            <p>Juntos somos mais fortes 💪</p>
+        </div>
+        <div class="face verso">
+            <p>Sua paciência é admirável ⭐</p>
+        </div>
+        
+    </div>
+    <div class="polaroid" onclick="flipCard(this)">
+        <div class="face frente">
+        <img src="./assets/img/mae3.jpg" alt="Momentos juntos">
+        <p>Você é o nosso maior presente 🤗</p>
+        </div>
+        <div class="face verso">
+            <p>Seu exemplo nos inspira a ser melhor todo os dias 🌱</p>
+        </div>
+    </div>
+    <div class="polaroid" onclick="flipCard(this)">
+        <div class="face frente">
+        <img src="./assets/img/mae4.jpg" alt="Momentos juntos">
+        <p>Você é tão paciente 🤗</p>
+        </div>
+        <div class="face verso">
+            <p>Seu amor é o nosso maior tesouro 💖</p>
+        </div>
+    </div>
+    <div class="polaroid" onclick="flipCard(this)">
+        <div class="face frente">
+        <img src="./assets/img/mae5.jpg" alt="Momentos juntos">
+        <p>Você é repleta de amor ❤️</p>
+        </div>
+        <div class="face verso">
+            <p>Deus vai honhar todos os seus esforços pela a nossa família</p>
+        </div>
+    </div>
+    <div class="polaroid" onclick="flipCard(this)">
+        <div class="face frente">
+        <img src="./assets/img/mae6.png" alt="Momentos juntos">
+        <p>Tão linda 💐</p>
+        </div>
+        <div class="face verso">
+            <p>Você é a nossa maior inspiração 💖</p>
+        </div>
+    </div>
+    </section>
+  
+    <footer data-aos="fade-up">
+        <h2>Uma mensagem especial para você, mãe!</h2>
+        <p>"Honra teu pai e tua mãe" - Exôdo 20:12</p>
+    </footer>
+    </section>
+
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true});
+  </script>
+</body>
+</html>
